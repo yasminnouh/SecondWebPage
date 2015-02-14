@@ -14,18 +14,18 @@
 /*
  * Adding a list 
  */
-var LosAngeles = [{
-				name : "transportation",
-				type: "405_freeway"
+var LAtransit = [{
+				name : "405_freeway",
+				type: "highway"
 			}, {
-				name : "parks",
-				type : "griffith_park"
+				name : "110_freeway",
+				type : "highway"
 				
-			}, {name : "colleges", 
-				type: "ucla"
+			}, {name : "colorado_blvd", 
+				type: "main_street"
 				
-			}, {name : "buildings", 
-				type: "staples_center"
+			}, {name : "santamonica_blvd", 
+				type: "main_street"
 			}];
 
 /*
@@ -35,9 +35,17 @@ var LosAngeles = [{
  * 
  */
 
-for(var i=0;i<4;i++){
-	console.log(i);
-}
+	for(var i=0;i<4;i++){
+	
+		var item = LAtransit[i];
+	
+			if(item.type == "highway"){
+		
+		console.log(item);
+		
+	} //end of conditional
+		
+} //end of for loop
 
 </script>
 
