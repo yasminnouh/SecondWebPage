@@ -29,25 +29,27 @@ var LAtransit = [{
 			}];
 
 /*
- * Creating a for loop
- * Starting at index zero, ending before index four 
+ * Below created a for loop
+ * Says: Starting at index zero, ending before index four 
  * increment i by 1 each time
  * 
  */
 
 /*
- * Created an if statement within my for loop
+ * Below created an if statement within my for loop
  * Says: If item has many lanes, put it in my 
  * many lanes list otherwise put it in my lesslanes
  * list
  */
 
+function sortLAtransit(LAtransitToSort){
+	
 	var manylanes = [];
 	var lesslanes = [];
 
 	for(var i=0;i<4;i++){ 
 	
-		var item = LAtransit[i];
+		var item = LAtransitToSort[i];
 	
 			if(item.type == "highway"){
 		
@@ -64,7 +66,7 @@ var LAtransit = [{
 console.log(manylanes);
 console.log(lesslanes);
 
-
+} //end of sortLAtransit function
 </script>
 
 			
