@@ -77,21 +77,24 @@ function sortLAtransit(LAtransitToSort){
 		
 } //end of for loop
 
-console.log(manylanes);
-console.log(lesslanes);
+return(manylanes);
 
 } //end of sortLAtransit function
 
-sortLAtransit(LAtransit); 
 /*
  * sort first LA transit list
  * expect to get freeways
  */
-sortLAtransit(LAtransit_2); 
+
+var FirstListOfLanes = sortLAtransit(LAtransit); 
+console.log(FirstListOfLanes);
 /*
  * sort second LA transit list
  * expect to get freeways 
  */
+
+var SecondListofLanes = sortLAtransit(LAtransit_2); 
+console.log(SecondListofLanes);
 
 
 </script>
