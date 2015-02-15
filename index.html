@@ -15,16 +15,30 @@
  * Adding a list 
  */
 var LAtransit = [{
-				name : "405_freeway",
+				name : "405_north",
 				type: "highway"
 			}, {
-				name : "110_freeway",
+				name : "110_south",
 				type : "highway"
 				
 			}, {name : "colorado_blvd", 
 				type: "main_street"
 				
 			}, {name : "santamonica_blvd", 
+				type: "main_street"
+			}];
+
+var LAtransit_2 = [{
+				name : "10_east",
+				type: "highway"
+			}, {
+				name : "101_south",
+				type : "highway"
+				
+			}, {name : "2_south", 
+				type: "highway"
+				
+			}, {name : "los_feliz_blvd", 
 				type: "main_street"
 			}];
 
@@ -67,6 +81,8 @@ console.log(manylanes);
 console.log(lesslanes);
 
 } //end of sortLAtransit function
+
+sortLAtransit(LAtransit);
 </script>
 
 			
