@@ -35,17 +35,35 @@ var LAtransit = [{
  * 
  */
 
-	for(var i=0;i<4;i++){
+/*
+ * Created an if statement within my for loop
+ * Says: If item has many lanes, put it in my 
+ * many lanes list otherwise put it in my lesslanes
+ * list
+ */
+
+	var manylanes = [];
+	var lesslanes = [];
+
+	for(var i=0;i<4;i++){ 
 	
 		var item = LAtransit[i];
 	
 			if(item.type == "highway"){
 		
-		console.log(item);
+			manylanes.push(item);
+		
+		}else{
+			
+			lesslanes.push(item); 
 		
 	} //end of conditional
 		
 } //end of for loop
+
+console.log(manylanes);
+console.log(lesslanes);
+
 
 </script>
 
